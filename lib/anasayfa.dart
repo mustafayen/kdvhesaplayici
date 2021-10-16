@@ -16,12 +16,7 @@ class AnaSayfa extends StatefulWidget {
 class _AnaSayfaState extends State<AnaSayfa> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(
-        primarySwatch: Colors.indigo,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: Scaffold(
+    return Scaffold(
         appBar: AppBar(
           title: Center(
             child: Text("KDV HESAPLAYICI",
@@ -105,8 +100,7 @@ class _AnaSayfaState extends State<AnaSayfa> {
             ),
           ],
         ),
-      ),
-    );
+      );
   }
 
   void fonksiyon() {

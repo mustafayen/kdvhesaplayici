@@ -15,6 +15,12 @@ class _myAppState extends State<myApp> {
   @override
   Widget build(BuildContext context) {
 
-    return AnaSayfa();
+    return MaterialApp(
+      theme: ThemeData(
+        primarySwatch: Colors.indigo,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
+      home: AnaSayfa(),
+    );
   }
 }
